@@ -26,3 +26,16 @@ You can check out the [create-t3-app GitHub repository](https://github.com/t3-os
 ## How do I deploy this?
 
 Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+
+## Initial Settup
+
+We are going to use `NextAuth.js` for aunthetication.
+Used `@/*` for the question from `What import alias would you like to use?`
+`npm run dev`
+Use `vercel` to depoly the app
+
+- Will fail the deployment : getting an error for `ENV` setting
+  Use `PlanetScale` (production ready db)
+- QuickStart PlanetScale with prisma : update `schema.prisma` and `ENV` for dbURL
+- Push the change : `npx prisma db push`
+- Can check on prisma studio and add data to the database directly : `npx prisma studio
